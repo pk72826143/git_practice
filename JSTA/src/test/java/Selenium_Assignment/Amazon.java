@@ -37,6 +37,8 @@ public class Amazon {
 		//select discount : 25% Off or more
 		driver.findElement(By.xpath("//span[text()='25% Off or more']")).click();
 		Thread.sleep(3000);
+
+		//Get 5th element on the page
 		List<WebElement> items =  driver.findElements(By.xpath("//div[@class='sg-col-4-of-24 sg-col-4-of-12 s-result-item s-asin sg-col-4-of-16 sg-col s-widget-spacing-small sg-col-4-of-20']"));
 		int size = items.size();
 		System.out.println(size);
